@@ -1,0 +1,58 @@
+<svg width="720" height="240" viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Raíz Urbana">
+  <defs>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FB069"/>
+      <stop offset="1" stop-color="#2E5D3B"/>
+    </linearGradient>
+    <linearGradient id="badgeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F5F1E8"/>
+      <stop offset="1" stop-color="#E6E0CE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblema -->
+  <g transform="translate(20,20)">
+    <!-- Placa redondeada -->
+    <rect x="0" y="0" width="200" height="200" rx="46" fill="url(#badgeGrad)" stroke="#2E5D3B" stroke-width="4"/>
+
+    <!-- Silueta urbana (base) -->
+    <g fill="#2E5D3B" opacity="0.9">
+      <rect x="34" y="120" width="20" height="46" rx="2"/>
+      <rect x="58" y="104" width="22" height="62" rx="2"/>
+      <rect x="120" y="112" width="22" height="54" rx="2"/>
+      <rect x="146" y="126" width="20" height="40" rx="2"/>
+    </g>
+    <!-- Ventanas -->
+    <g fill="#F5F1E8" opacity="0.85">
+      <rect x="40" y="128" width="4" height="4"/><rect x="46" y="128" width="4" height="4"/>
+      <rect x="40" y="138" width="4" height="4"/><rect x="46" y="138" width="4" height="4"/>
+      <rect x="64" y="112" width="4" height="4"/><rect x="70" y="112" width="4" height="4"/>
+      <rect x="64" y="124" width="4" height="4"/><rect x="70" y="124" width="4" height="4"/>
+      <rect x="126" y="120" width="4" height="4"/><rect x="132" y="120" width="4" height="4"/>
+      <rect x="126" y="132" width="4" height="4"/><rect x="132" y="132" width="4" height="4"/>
+    </g>
+
+    <!-- Tallo -->
+    <path d="M100 168 C100 140 100 118 100 96" fill="none" stroke="#2E5D3B" stroke-width="7" stroke-linecap="round"/>
+    <!-- Raíces -->
+    <g fill="none" stroke="#C1683A" stroke-width="4" stroke-linecap="round">
+      <path d="M100 168 C92 176 82 178 74 186"/>
+      <path d="M100 168 C108 176 118 178 126 186"/>
+      <path d="M100 168 C100 178 100 182 100 190"/>
+    </g>
+    <!-- Hoja izquierda -->
+    <path d="M100 118 C74 116 56 96 58 70 C86 70 104 90 100 118 Z" fill="url(#leafGrad)"/>
+    <!-- Hoja derecha -->
+    <path d="M100 106 C126 104 146 84 144 58 C114 58 96 78 100 106 Z" fill="url(#leafGrad)"/>
+    <!-- Brote superior -->
+    <circle cx="100" cy="72" r="9" fill="#7FB069" stroke="#2E5D3B" stroke-width="3"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(250,0)">
+    <text x="0" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" fill="#2E5D3B">Ra&#237;z</text>
+    <text x="150" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" fill="#C1683A">Urbana</text>
+    <line x1="2" y1="140" x2="450" y2="140" stroke="#7FB069" stroke-width="3"/>
+    <text x="4" y="168" font-family="'Segoe UI', Arial, sans-serif" font-size="16.5" letter-spacing="1.4" fill="#26312B">CULTIVA TU ESPACIO, RESPIRA TU CIUDAD</text>
+  </g>
+</svg>

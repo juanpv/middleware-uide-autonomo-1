@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#E6EEF0"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/>
+    <ellipse cx="200" cy="240" rx="90" ry="16" fill="#000" opacity="0.06"/>
+    <path d="M150 150 q0 -10 12 -10 l70 0 q12 0 12 10 l-8 80 q-2 12 -14 12 l-50 0 q-12 0 -14 -12 Z" fill="#6FA8A0"/>
+    <path d="M232 165 q45 -5 55 40" fill="none" stroke="#6FA8A0" stroke-width="10"/>
+    <ellipse cx="292" cy="205" rx="14" ry="8" fill="#4d827a"/>
+    <path d="M162 150 q30 -35 66 0" fill="none" stroke="#4d827a" stroke-width="8"/>
+    <text x="200" y="285" font-family="Georgia" font-size="18" fill="#4d827a" text-anchor="middle">Regadera vintage</text>
+</svg>

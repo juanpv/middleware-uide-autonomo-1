@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#F1E8EC"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/>
+    <g transform="translate(200 175) rotate(-35)">
+    <path d="M0 0 C 55 -45.5, 55 -104, 0 -130
+             C -55 -104, -55 -45.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-130" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g>
+    <g transform="translate(200 175) rotate(35)">
+    <path d="M0 0 C 55 -45.5, 55 -104, 0 -130
+             C -55 -104, -55 -45.5, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-130" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g>
+    <g transform="translate(200 175) rotate(0)">
+    <path d="M0 0 C 50 -52.5, 50 -120, 0 -150
+             C -50 -120, -50 -52.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-150" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g>
+    <g transform="translate(200 175) rotate(-70)">
+    <path d="M0 0 C 40 -35, 40 -80, 0 -100
+             C -40 -80, -40 -35, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-100" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g>
+    <g transform="translate(200 175) rotate(70)">
+    <path d="M0 0 C 40 -35, 40 -80, 0 -100
+             C -40 -80, -40 -35, 0 0 Z" fill="#2E5D3B"/>
+    <line x1="0" y1="0" x2="0" y2="-100" stroke="#1e3d27" stroke-width="2" opacity="0.5"/>
+  </g>
+    <path d="M135 190 L265 190 L246.8 261.5 L153.2 261.5 Z" fill="#8FA3B0"/>
+    <rect x="131" y="178" width="138" height="16" rx="4" fill="#6d818e"/>
+    <path d="M153.2 261.5 L246.8 261.5 L240.8 269.5 L159.2 269.5 Z" fill="#6d818e" opacity="0.5"/>
+</svg>

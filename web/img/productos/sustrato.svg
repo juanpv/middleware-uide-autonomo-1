@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#EDEFE3"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/>
+    <path d="M140 90 L260 90 L270 250 L130 250 Z" fill="#5b4a37"/>
+    <rect x="140" y="90" width="120" height="10" fill="#3d3226"/>
+    <rect x="160" y="120" width="80" height="70" rx="6" fill="#F3ECE0"/>
+    <circle cx="200" cy="140" r="14" fill="#4A8B5C"/>
+    <text x="200" y="175" font-family="Georgia" font-size="16" fill="#2E5D3B" text-anchor="middle">SUSTRATO</text>
+    <text x="200" y="225" font-family="Georgia" font-size="22" fill="#F3ECE0" text-anchor="middle">Universal 5L</text>
+</svg>

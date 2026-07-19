@@ -1,0 +1,29 @@
+# Dependencias y herramientas de generación
+node_modules/
+package.json
+package-lock.json
+
+# Scripts auxiliares usados para generar el documento y las imágenes
+build-doc.js
+gen-productos.js
+convert.js
+montage.js
+render-er.js
+shots.js
+shot-movil.js
+test-file.js
+er.html
+mermaid.min.js
+
+# Carpeta de documentos (NO se sube al repositorio)
+doc/
+
+# Artefactos temporales
+RaizUrbana_entrega.zip
+~$*
+*.tmp
+
+# Sistema
+Thumbs.db
+.DS_Store
+*.log

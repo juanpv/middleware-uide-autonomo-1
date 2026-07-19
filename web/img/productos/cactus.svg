@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#E6EEF0"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/>
+    <rect x="180" y="70" width="40" height="120" rx="20" fill="#4A8B5C"/>
+    <rect x="140" y="120" width="30" height="70" rx="15" fill="#7FB069"/>
+    <rect x="230" y="105" width="30" height="85" rx="15" fill="#7FB069"/>
+    <g stroke="#2E5D3B" stroke-width="2">
+      <line x1="200" y1="80" x2="200" y2="185"/>
+      <line x1="185" y1="80" x2="185" y2="185"/><line x1="215" y1="80" x2="215" y2="185"/>
+    </g>
+    <circle cx="200" cy="70" r="8" fill="#E8A0BF"/>
+    <path d="M135 190 L265 190 L246.8 261.5 L153.2 261.5 Z" fill="#C1683A"/>
+    <rect x="131" y="178" width="138" height="16" rx="4" fill="#9c4f2b"/>
+    <path d="M153.2 261.5 L246.8 261.5 L240.8 269.5 L159.2 269.5 Z" fill="#9c4f2b" opacity="0.5"/>
+</svg>

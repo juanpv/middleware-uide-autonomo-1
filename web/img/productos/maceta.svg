@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#F3ECE0"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/>
+    
+    <path d="M125 120 L275 120 L254 202.5 L146 202.5 Z" fill="#C1683A"/>
+    <rect x="121" y="108" width="158" height="16" rx="4" fill="#9c4f2b"/>
+    <path d="M146 202.5 L254 202.5 L248 210.5 L152 210.5 Z" fill="#9c4f2b" opacity="0.5"/>
+    <circle cx="200" cy="115" r="40" fill="#8a4a2a" opacity="0.35"/>
+    <text x="200" y="250" font-family="Georgia" font-size="20" fill="#9c4f2b" text-anchor="middle">Cerámica artesanal</text>
+</svg>

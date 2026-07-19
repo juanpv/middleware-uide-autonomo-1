@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320">
+  <defs><radialGradient id="moss"><stop offset="0" stop-color="#7FB069"/><stop offset="1" stop-color="#4A8B5C"/></radialGradient></defs>
+  <rect width="400" height="320" fill="#EDEFE3"/>
+    <circle cx="200" cy="150" r="120" fill="#ffffff" opacity="0.45"/><g transform="translate(200 180) rotate(0)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(45)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(90)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(135)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(180)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(225)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(270)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#4A8B5C"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><g transform="translate(200 180) rotate(315)">
+    <path d="M0 0 C 26 -24.5, 26 -56, 0 -70
+             C -26 -56, -26 -24.5, 0 0 Z" fill="#7FB069"/>
+    <line x1="0" y1="0" x2="0" y2="-70" stroke="#2E5D3B" stroke-width="2" opacity="0.5"/>
+  </g><circle cx="200" cy="180" r="14" fill="#7FB069"/>
+    <path d="M135 190 L265 190 L246.8 261.5 L153.2 261.5 Z" fill="#EDE7DB"/>
+    <rect x="131" y="178" width="138" height="16" rx="4" fill="#cfc8b8"/>
+    <path d="M153.2 261.5 L246.8 261.5 L240.8 269.5 L159.2 269.5 Z" fill="#cfc8b8" opacity="0.5"/>
+</svg>

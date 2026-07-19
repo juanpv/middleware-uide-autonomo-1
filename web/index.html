@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raíz Urbana — Vivero digital de plantas de interior</title>
+  <meta name="description" content="Raíz Urbana: plantas de interior, macetas de diseño y accesorios de jardinería urbana. Cultiva tu espacio, respira tu ciudad." />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== CABECERA ===================== -->
+  <header class="cabecera">
+    <!-- Fila 1: nombre + logo -->
+    <div class="cont cabecera__top">
+      <a href="#home" class="marca" data-nav="home">
+        <span class="marca__texto"><b>Raíz</b>Urbana</span>
+      </a>
+      <img src="img/emblema.svg" alt="Logo Raíz Urbana" class="marca__logo" data-nav="home" />
+    </div>
+
+    <!-- Fila 2: BARRA DE NAVEGACIÓN (debajo del nombre y el logo) -->
+    <nav class="nav" id="nav">
+      <div class="cont nav__inner">
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav__lista" id="navLista">
+          <li><a href="#home" class="nav__link is-active" data-nav="home">Home</a></li>
+          <li><a href="#empresa" class="nav__link" data-nav="empresa">Empresa</a></li>
+          <li><a href="#productos" class="nav__link" data-nav="productos">Productos</a></li>
+          <li><a href="#oferta" class="nav__link" data-nav="oferta">Oferta del mes</a></li>
+          <li><a href="#localizacion" class="nav__link" data-nav="localizacion">Localización</a></li>
+          <li><a href="#contacto" class="nav__link" data-nav="contacto">Contacto</a></li>
+          <li><a href="#noticias" class="nav__link" data-nav="noticias">Noticias</a></li>
+        </ul>
+        <button class="carrito-btn" id="carritoBtn" aria-label="Ver carrito">
+          &#128722; <span class="carrito-btn__badge" id="carritoBadge">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== CUERPO (SECCIONES) ===================== -->
+  <main>
+
+    <!-- HOME -->
+    <section class="seccion is-active" id="home">
+      <div class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__contenido">
+          <h1 class="hero__titulo">Cultiva tu espacio,<br>respira tu ciudad</h1>
+          <p class="hero__slogan">Plantas de interior, macetas de diseño y accesorios para transformar cualquier rincón urbano en un oasis verde.</p>
+          <button class="btn btn--grande" data-nav="productos">Ver catálogo</button>
+        </div>
+      </div>
+      <div class="cont ventajas">
+        <div class="ventaja"><span class="ventaja__ico">🌱</span><h3>Plantas seleccionadas</h3><p>Especies resistentes y adaptadas a la vida en interiores.</p></div>
+        <div class="ventaja"><span class="ventaja__ico">🚚</span><h3>Envío a domicilio</h3><p>Entregamos tu pedido cuidando cada hoja en el trayecto.</p></div>
+        <div class="ventaja"><span class="ventaja__ico">💧</span><h3>Asesoría de cuidado</h3><p>Guía personalizada para que tu planta crezca feliz.</p></div>
+      </div>
+    </section>
+
+    <!-- EMPRESA -->
+    <section class="seccion" id="empresa">
+      <div class="cont">
+        <h2 class="titulo">Nuestra empresa</h2>
+        <p class="parrafo">
+          <b>Raíz Urbana</b> nace en 2024 con una idea simple: acercar la naturaleza a quienes viven
+          en la ciudad. Somos un emprendimiento digital dedicado a la venta de plantas de interior,
+          macetas de diseño y accesorios de jardinería urbana. Creemos que un espacio verde mejora
+          el ánimo, purifica el aire y conecta a las personas con lo esencial.
+        </p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>🕒 Horarios de atención</h3>
+            <ul class="lista-limpia">
+              <li>Lunes a Viernes: 09:00 – 19:00</li>
+              <li>Sábados: 10:00 – 15:00</li>
+              <li>Domingos: Tienda online 24/7</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🛠️ Nuestros servicios</h3>
+            <ul class="lista-limpia">
+              <li>Venta de plantas y accesorios</li>
+              <li>Asesoría de cuidado personalizada</li>
+              <li>Diseño de rincones verdes a domicilio</li>
+              <li>Talleres de jardinería urbana</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🎯 Misión y visión</h3>
+            <p>Llevar naturaleza a cada hogar urbano con productos sostenibles y acompañamiento
+               experto, siendo el vivero digital de referencia en la región para 2027.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="seccion" id="productos">
+      <div class="cont">
+        <h2 class="titulo">Nuestros productos</h2>
+        <p class="parrafo centro">Explora nuestro catálogo y arma tu rincón verde. Agrega productos al carrito y finaliza tu compra.</p>
+
+        <div class="filtros">
+          <input type="text" id="buscador" class="filtros__input" placeholder="🔍 Buscar producto..." />
+          <div class="filtros__cats" id="filtrosCats"></div>
+        </div>
+
+        <div class="catalogo" id="catalogo"><!-- generado por JS --></div>
+      </div>
+    </section>
+
+    <!-- OFERTA DEL MES -->
+    <section class="seccion" id="oferta">
+      <div class="cont">
+        <h2 class="titulo">Oferta del mes</h2>
+        <div class="oferta" id="oferta-box"><!-- generado por JS --></div>
+      </div>
+    </section>
+
+    <!-- LOCALIZACIÓN -->
+    <section class="seccion" id="localizacion">
+      <div class="cont">
+        <h2 class="titulo">Localización</h2>
+        <p class="parrafo centro">Visítanos en nuestra tienda física o escríbenos por WhatsApp para coordinar tu envío.</p>
+        <div class="localizacion">
+          <div class="localizacion__info">
+            <h3>📍 Dirección</h3>
+            <p>Av. de los Jardines N45-120 y Av. Eloy Alfaro<br>Quito, Ecuador</p>
+            <h3>📞 Teléfono</h3>
+            <p>+593 2 245 8890</p>
+            <h3>🕒 Horario</h3>
+            <p>Lun–Vie 09:00–19:00 · Sáb 10:00–15:00</p>
+          </div>
+          <div class="localizacion__mapa">
+            <iframe
+              title="Mapa Raíz Urbana"
+              src="https://www.google.com/maps?q=Quito,Ecuador&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="seccion" id="noticias">
+      <div class="cont">
+        <h2 class="titulo">Noticias</h2>
+        <p class="parrafo centro">Novedades, eventos y consejos del mundo Raíz Urbana.</p>
+        <div class="noticias" id="noticias-lista"><!-- generado por JS --></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion" id="contacto">
+      <div class="cont">
+        <h2 class="titulo">Contacto</h2>
+        <div class="contacto">
+          <div class="contacto__datos">
+            <h3>Hablemos</h3>
+            <p>¿Tienes dudas sobre una planta o tu pedido? Escríbenos.</p>
+            <ul class="lista-limpia">
+              <li>📧 hola@raizurbana.ec</li>
+              <li>📞 +593 2 245 8890</li>
+              <li>📱 WhatsApp: +593 98 765 4321</li>
+              <li>📸 Instagram: @raizurbana.ec</li>
+              <li>📍 Av. de los Jardines N45-120, Quito</li>
+            </ul>
+          </div>
+          <form class="contacto__form" id="formContacto" novalidate>
+            <label>Nombre <input type="text" name="nombre" id="c-nombre" /></label>
+            <span class="error" id="e-nombre"></span>
+            <label>Correo <input type="email" name="correo" id="c-correo" /></label>
+            <span class="error" id="e-correo"></span>
+            <label>Mensaje <textarea name="mensaje" id="c-mensaje" rows="4"></textarea></label>
+            <span class="error" id="e-mensaje"></span>
+            <button type="submit" class="btn">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== CARRITO (panel lateral) ===================== -->
+  <div class="drawer-bg" id="drawerBg"></div>
+  <aside class="drawer" id="drawer" aria-label="Carrito de compras">
+    <div class="drawer__head">
+      <h3>🛒 Tu carrito</h3>
+      <button class="drawer__close" id="drawerClose" aria-label="Cerrar">&times;</button>
+    </div>
+    <div class="drawer__items" id="drawerItems"></div>
+    <div class="drawer__foot">
+      <div class="drawer__total">Total: <span id="drawerTotal">$0.00</span></div>
+      <button class="btn btn--full" id="btnComprar">Finalizar compra</button>
+      <button class="btn btn--ghost btn--full" id="btnVaciar">Vaciar carrito</button>
+    </div>
+  </aside>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="pie">
+    <div class="cont pie__inner">
+      <div class="pie__col">
+        <img src="img/emblema.svg" alt="Raíz Urbana" class="pie__logo" />
+        <p><b>Raíz Urbana</b><br>Vivero digital de plantas de interior</p>
+      </div>
+      <div class="pie__col">
+        <h4>Empresa</h4>
+        <p>RUC: 1792233445001<br>Quito – Ecuador<br>Fundada en 2024</p>
+      </div>
+      <div class="pie__col">
+        <h4>Contacto</h4>
+        <p>📧 hola@raizurbana.ec<br>📞 +593 2 245 8890<br>📱 +593 98 765 4321</p>
+      </div>
+      <div class="pie__col">
+        <h4>Síguenos</h4>
+        <p>Instagram · Facebook · TikTok<br>@raizurbana.ec</p>
+      </div>
+    </div>
+    <div class="pie__copy">© 2024–2026 Raíz Urbana. Todos los derechos reservados. Proyecto académico.</div>
+  </footer>
+
+  <!-- ===================== NOTIFICACIÓN (toast) ===================== -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
