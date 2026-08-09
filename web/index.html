@@ -32,6 +32,7 @@
           <li><a href="#localizacion" class="nav__link" data-nav="localizacion">Localización</a></li>
           <li><a href="#contacto" class="nav__link" data-nav="contacto">Contacto</a></li>
           <li><a href="#noticias" class="nav__link" data-nav="noticias">Noticias</a></li>
+          <li><a href="#clima" class="nav__link" data-nav="clima">Clima</a></li>
         </ul>
         <button class="carrito-btn" id="carritoBtn" aria-label="Ver carrito">
           &#128722; <span class="carrito-btn__badge" id="carritoBadge">0</span>
@@ -151,6 +152,19 @@
         <h2 class="titulo">Noticias</h2>
         <p class="parrafo centro">Novedades, eventos y consejos del mundo Raíz Urbana.</p>
         <div class="noticias" id="noticias-lista"><!-- generado por JS --></div>
+      </div>
+    </section>
+
+    <!-- CLIMA (reporteador con API OpenWeatherMap) -->
+    <section class="seccion" id="clima">
+      <div class="cont">
+        <h2 class="titulo">Clima</h2>
+        <p class="parrafo centro">Consulta el clima actual para planificar el cuidado y el envío de tus plantas. Escribe una ciudad y pulsa el botón.</p>
+        <div class="clima-buscador">
+          <input type="text" id="climaCiudad" class="filtros__input" placeholder="Ciudad (ej. Quito)" value="Quito" />
+          <button class="btn btn--grande" id="btnClima">🌤️ Ver clima</button>
+        </div>
+        <div class="clima-resultado" id="climaResultado"><!-- generado por JS --></div>
       </div>
     </section>
 

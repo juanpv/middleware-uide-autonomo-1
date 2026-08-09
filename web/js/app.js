@@ -242,6 +242,48 @@ $(function () {
     }
   });
 
+  /* ---------- 9b. Clima (reporteador con API OpenWeatherMap) ---------- */
+  const CLIMA_API_KEY = '8d3c17dbaa1934549f95c9e4e87ef918';
+
+  function pintarClima(d) {
+    const desc = (d.weather && d.weather[0]) ? d.weather[0].description : '—';
+    const icon = (d.weather && d.weather[0]) ? d.weather[0].icon : '01d';
+    const pais = d.sys && d.sys.country ? ', ' + d.sys.country : '';
+    $('#climaResultado').html(`
+      <div class="clima-card">
+        <img class="clima-card__icono" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" />
+        <h3 class="clima-card__ciudad">${d.name}${pais}</h3>
+        <p class="clima-card__desc">${desc}</p>
+        <div class="clima-card__temp">${Math.round(d.main.temp)}°C</div>
+        <div class="clima-grid">
+          <div class="clima-dato"><b>${d.main.humidity}%</b><span>💧 Humedad</span></div>
+          <div class="clima-dato"><b>${d.wind.speed} m/s</b><span>💨 Viento</span></div>
+          <div class="clima-dato"><b>${Math.round(d.main.feels_like)}°C</b><span>🌡️ Sensación</span></div>
+        </div>
+      </div>`);
+  }
+
+  function verClima() {
+    const ciudad = ($('#climaCiudad').val() || 'Quito').trim();
+    if (!ciudad) { $('#climaResultado').html('<p class="clima-estado error">⚠️ Escribe el nombre de una ciudad.</p>'); return; }
+    $('#climaResultado').html('<p class="clima-estado">⏳ Consultando el clima...</p>');
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=' +
+      encodeURIComponent(ciudad) + '&units=metric&lang=es&appid=' + CLIMA_API_KEY;
+    fetch(url)
+      .then(r => r.json())
+      .then(d => {
+        if (String(d.cod) !== '200') { throw new Error(d.message || 'No disponible'); }
+        pintarClima(d);
+      })
+      .catch(err => {
+        $('#climaResultado').html('<p class="clima-estado error">⚠️ No se pudo obtener el clima: ' +
+          err.message + '.</p>');
+      });
+  }
+
+  $('#btnClima').on('click', verClima);
+  $('#climaCiudad').on('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); verClima(); } });
+
   /* ---------- 9. Toast ---------- */
   let toastT;
   function toast(msg, ms = 3200) {
