@@ -65,3 +65,5 @@ normalización y el script SQL.
 ---
 
 © 2024–2026 Raíz Urbana — Proyecto académico.
+
+> Nota: el sitio incluye el modulo Clima, un reporteador del clima con la API de OpenWeatherMap.
